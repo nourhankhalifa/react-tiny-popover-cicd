@@ -1,5 +1,5 @@
 {
-  "name": "react-tiny-popover",
+  "name": "@nourhankhalifa/react-tiny-popover",
   "version": "8.1.2",
   "description": "A simple and highly customizable popover react higher order component with no other dependencies!",
   "keywords": [
@@ -23,7 +23,9 @@
   "main": "dist/Popover.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p . && pnpm run copy-types",
+    "build": "tsc -p . && npm run copy-types",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "test": "jest --no-cache",
     "clean": "rm -rf dist/",
     "copy-types": "cp src/index.d.ts dist/index.d.ts",
     "start-demo": "cd docs && pnpm run start",
@@ -34,6 +36,11 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/jest": "^29.5.11",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-react-app": "^7.0.1",
@@ -45,7 +52,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^3.0.3",
     "tsc-watch": "^6.0.4",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "@testing-library/react": "^14.1.2"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
