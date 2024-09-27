@@ -11,14 +11,3 @@ module.exports = {
       '\\.(css|less)$': 'identity-obj-proxy',
     },
   }
-
-//   module.exports = {
-//     preset: 'ts-jest',  // Use ts-jest to transpile TypeScript files
-//     testEnvironment: 'jsdom',  // Simulate browser-like environment for React
-//     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],  // Recognize file extensions
-//     transform: {
-//       '^.+\\.tsx?$': 'ts-jest',  // Use ts-jest to handle TypeScript files
-//     },
-//     setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],  // Setup for Jest DOM matchers
-//     testPathIgnorePatterns: ['/node_modules/', '/dist/'],  // Ignore test files in certain directories
-//   };
