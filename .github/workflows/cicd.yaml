@@ -36,4 +36,4 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=\${NPM_TOKEN}" >> $GITHUB_WORKSPACE/.npmrc
           npm publish 
         env:
-          NODE_AUTH_TOKEN: ${{secrets.MY_GITHUB_TOKEN}}
+          NPM_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
